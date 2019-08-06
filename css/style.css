@@ -1,0 +1,213 @@
+body {
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  box-sizing: border-box;
+}
+
+/* ----------------Main block----------- */
+
+.introduceblock {
+  width: 320px;
+}
+.main {
+  width: 100%;
+  text-align: center;
+  background-color: #242c30;
+}
+.main__photo {
+  padding-top: 21px;
+}
+.main__text {
+  color: #fff;
+}
+
+.name {
+  font-family: "Montserrat", "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 20px;
+  line-height: 0.83;
+}
+
+.position {
+  font-family: "Open Sans", "Montserrat", sans-serif;
+  font-size: 16px;
+  padding: 8px 0 53px 0;
+  line-height: 1.25;
+}
+.info {
+  background-color: #3c444a;
+  flex-grow: 3;
+  color: #fff;
+  height: 1250px;
+}
+.info__objective {
+  color: #fff;
+}
+.header {
+  text-transform: uppercase;
+  font-family: "Open Sans", "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 1.25;
+  padding: 20px 40px 20px 92px;
+}
+.text {
+  font-family: "Montserrat", "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.25;
+  margin: 0 38px 0 40px;
+  text-decoration: none;
+  color: #fff;
+}
+/* ------------------------------------------ */
+
+/* ------------Info block-------------------- */
+.info__bio {
+  padding-bottom: 20px;
+}
+.info__bio,
+.info__objective,
+.info__technical {
+  position: relative;
+}
+
+.info__objective img,
+.info__technical img,
+.info__bio img {
+  position: absolute;
+  width: 40px;
+  top: 11px;
+  left: 40px;
+}
+
+/* -------------------------------------------------------- */
+
+/*---------------------------------CV block------------------------ */
+
+.cvblock {
+  min-width: 320px;
+  border: 1px solid #9e9e9e;
+  box-sizing: border-box;
+}
+.cv {
+}
+.education {
+  position: relative;
+  margin: 40px 40px 0 40px;
+}
+.expirience {
+  position: relative;
+  margin: 40px 40px 0 40px;
+}
+
+.education__head img {
+  position: absolute;
+  width: 40px;
+  top: -12px;
+}
+.education__head p {
+  text-transform: uppercase;
+  font-family: "Open Sans", "Montserrat", sans-serif;
+  font-size: 18px;
+  margin: 0 0 20px 52px;
+}
+.expirience__head {
+  position: relative;
+}
+.expirience__head img {
+  position: absolute;
+  width: 40px;
+  top: -12px;
+}
+.expirience__head p {
+  text-transform: uppercase;
+  margin: 0 0 20px 52px;
+  font-family: "Open Sans", "Montserrat", sans-serif;
+  font-size: 18px;
+}
+.work {
+  margin-bottom: 20px;
+}
+.work p {
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-family: "Open Sans", "Montserrat", sans-serif;
+  line-height: 1.25;
+}
+
+.place {
+  margin-bottom: 20px;
+  position: relative;
+}
+.place p {
+  font-family: "Montserrat", "Open Sans", sans-serif;
+  color: #909faa;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-left: 32px;
+}
+.place img {
+  position: absolute;
+  width: 20px;
+}
+.year {
+  position: relative;
+}
+.year img {
+  position: absolute;
+  width: 20px;
+}
+.year p {
+  color: #909faa;
+  font-size: 16px;
+  font-family: "Montserrat", "Open Sans", sans-serif;
+  line-height: 1.25;
+  margin-left: 32px;
+}
+.responsibilities {
+  margin: 20px 0 20px 0;
+}
+.responsibilities p {
+  font-size: 16px;
+  font-family: "Montserrat", "Open Sans", sans-serif;
+  line-height: 1.25;
+}
+
+/* -------------------------------------------- */
+
+.cvblock {
+  min-width: 320px;
+  max-width: 400px;
+}
+
+@media screen and (max-width: 568px) {
+  .introduceblock {
+    width: 100%;
+  }
+
+  .info {
+    height: 550px;
+  }
+  .cvblock {
+    border: none;
+  }
+  .wrapper {
+    justify-content: start;
+  }
+}
+
+@media screen and (min-width: 569px) and (max-width: 670px) {
+  .cvblock {
+    width: 320px;
+    border: none;
+  }
+  .info {
+    height: 1550px;
+  }
+}
